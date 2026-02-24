@@ -27,9 +27,10 @@ body {
 .about {
   float: left;
   width: 68%;
+  box-sizing: border-box;
   border: 2px solid #1f6573;
   padding: 16px 20px;
-  background-color: #fdf8f2; 
+  background-color: #fdf8f2;
 }
 
 .about h2 {
@@ -48,6 +49,7 @@ body {
 .sidebar {
   float: right;
   width: 26%;
+  box-sizing: border-box;
   background-color: #fdf8f2;
   padding: 16px 20px;
   border: 2px solid #1f6573;
@@ -75,20 +77,24 @@ header {
 }
 
 .header-inner {
-  overflow: hidden;
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
-  min-height: 120px;
-  padding: 70px 40px 20px;
+  height: 120px;
+  padding: 0 40px;
 }
 
 header h1 {
-  float: left;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
   margin: 0;
 }
 
 header nav {
-  float: right;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
 }
 
 /* 7. Headings */

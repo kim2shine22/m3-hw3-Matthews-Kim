@@ -77,27 +77,22 @@ header {
 }
 
 .header-inner {
-  position: relative;
+  overflow: hidden;
   max-width: 800px;
   margin: 0 auto;
-  height: 120px;
-  padding: 0 40px;
+  padding: 60px 40px 16px;
 }
 
 header h1 {
-  position: absolute;
-  bottom: 20px;
-  left: 40px;
-  margin: 0;
+  float: left;
+  margin: 0 0 0 16px;
   background-color: #1f6573;
   color: #fdf8f2;
   padding: 6px 16px;
 }
 
 header nav {
-  position: absolute;
-  bottom: 20px;
-  right: 40px;
+  float: right;
 }
 
 /* 7. Headings */

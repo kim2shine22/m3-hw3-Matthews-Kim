@@ -93,6 +93,7 @@ header h1 {
 
 header nav {
   float: right;
+  padding-top: 26px;
 }
 
 /* 7. Headings */

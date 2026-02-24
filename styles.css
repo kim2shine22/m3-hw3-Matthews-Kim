@@ -18,16 +18,15 @@ body {
 
 /* 3. Main content two-column layout */
 .main-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
+  overflow: hidden;
   margin-top: 8px;
-  padding: 1rem;   
+  padding: 1rem;
 }
 
 /* 4. About text + image column */
 .about {
-  flex: 2;
+  float: left;
+  width: 68%;
   border: 2px solid #1f6573;
   padding: 16px 20px;
   background-color: #fdf8f2; 
@@ -47,7 +46,8 @@ body {
 
 /* 5. Social box column */
 .sidebar {
-  width: fit-content;
+  float: right;
+  width: 26%;
   background-color: #fdf8f2;
   padding: 16px 20px;
   border: 2px solid #1f6573;
@@ -75,13 +75,20 @@ header {
 }
 
 .header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  overflow: hidden;
   max-width: 800px;
   margin: 0 auto;
   min-height: 120px;
-  padding: 0px 40px 20px;
+  padding: 70px 40px 20px;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+}
+
+header nav {
+  float: right;
 }
 
 /* 7. Headings */
@@ -95,13 +102,18 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 24px;  /* space between About / Portfolio / Contact */
+  overflow: hidden;
 }
 
 nav li {
+  float: left;
   border-right: 2px solid #1f6573;
   padding-right: 24px;
+  margin-left: 24px;
+}
+
+nav li:first-child {
+  margin-left: 0;
 }
 
 nav li:last-child {
@@ -115,10 +127,6 @@ nav a {
   font-weight: bold;
 }
 
-/* 9. Name block on the left */
-header h1 {
-  margin: 0;
-}
 
 /* 10. Footer */
 footer {
